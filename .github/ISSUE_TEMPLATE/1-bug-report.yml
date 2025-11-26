@@ -1,0 +1,38 @@
+name: "\U0001F41B Bug Report"
+description: Create a report to help us improve
+labels:
+  - bug
+type: Bug
+assignees:
+  - LakshmiT91
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Describe the Bug
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description:
+        Steps to reproduce the behavior. Contributors should be able to follow the steps provided in order to reproduce
+        the bug.
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: (Optional) Additional Information (e.g. such as logs, user type, etc.)
+      description: Any other relevant details that could help with reproduction..
+    validations:
+      required: false
+  - type: textarea
+    id: expected-behaviour
+    attributes:
+      label: Expected Behaviour
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true

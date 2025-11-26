@@ -1,0 +1,36 @@
+name: "\U0001F680 Feature Request"
+description: Propose a new feature or enhancement
+labels:
+  - enhancement
+type: Feature
+assignees:
+  - LakshmiT91
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem it Solves
+      description: Describe the problem you are trying to solve.
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed Solution and Acceptance Criteria
+      description: Describe the desired behaviour or functionality, and list the acceptance criteria.
+      value: |
+        Provide a clear and concise description of the proposed solution.
+
+        Acceptance Criteria:
+        - [ ] AC 1
+        - [ ] AC 2
+        - [ ] AC 3
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: (Optional) Additional Information (e.g. screenshots, references, links, etc.)
+      description: Any other relevant details that could help with reproduction..
+    validations:
+      required: false

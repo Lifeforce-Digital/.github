@@ -1,0 +1,45 @@
+name: Generic Issue
+description: Create a new issue (bug, feature, improvement, or task)
+body:
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      description: Select the type that best describes this issue.
+      options:
+        - Bug
+        - Feature
+        - Improvement
+        - Task
+    validations:
+      required: true
+  - type: textarea
+    id: issue-description
+    attributes:
+      label: Description
+      description: |
+        - Explain the issue, requirement, or problem in detail.
+        - If it's a bug:
+          - Describe the bug.
+          - List steps to reproduce it.
+        - Add context, background, and any relevant information.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List conditions that define completion/fixes.
+      value: |
+        - [ ] AC 1
+        - [ ] AC 2
+        - [ ] AC 3
+    validations:
+      required: true
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: (Optional) Additional Information
+      description: Add logs, screenshots, references, links, etc.
+    validations:
+      required: false
