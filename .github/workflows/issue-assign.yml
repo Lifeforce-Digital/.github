@@ -1,0 +1,21 @@
+name: Auto Assign Issue
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        with:
+          script: |
+            const issueNumber = context.issue.number;
+            const repoName = context.repo.repo;
+            const assignees = ['PrimeDominus']; // Add GitHub usernames of assignees here
+            await github.rest.issues.addAssignees({
+              issue_number: issueNumber,
+              owner: context.repo.owner,
+              repo: repoName,
+              assignees: assignees,
+            });
