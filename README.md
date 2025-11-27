@@ -1,3 +1,3 @@
 # .github
 
-test pr-lint workflow
+test pr-lint workflow with invalid title
