@@ -2,7 +2,7 @@
 
 <!-- Put an 'x' in the box if true -->
 
-- [ ] The PR title follows the _conventional commits_ format. Reference:
+- [ ] The PR title follows the [conventional commits](https://github.com/Lifeforce-Digital/.github/blob/development/.github/CONTRIBUTING.md) format.
 
 ```
 feat(ui): Add `Button` component

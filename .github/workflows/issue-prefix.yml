@@ -1,25 +1,25 @@
 name: Prefix issue ID
 on:
-    issues:
-        types: [opened]
+  issues:
+    types: [opened]
 
 jobs:
-    prefix:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/github-script@v8
-              with:
-                  script: |
-                      const issueNumber = context.issue.number;
-                      const repoName = context.repo.repo;
-                      const currentTitle = context.payload.issue.title;
+  prefix:
+    runs-on: depot-ubuntu-24.04-arm-small
+    steps:
+      - uses: actions/github-script@ed597411d8f924073f98dfc5c65a23a2325f34cd # v8.0.0
+        with:
+          script: |
+            const issueNumber = context.issue.number;
+            const repoName = context.repo.repo;
+            const currentTitle = context.payload.issue.title;
 
-                      if (!currentTitle.startsWith("LD-${repoName}")) {
-                        const newTitle = `LD-${repoName}-${issueNumber}: ${currentTitle}`;
-                        await github.rest.issues.update({
-                          issue_number: context.issue.number,
-                          owner: context.repo.owner,
-                          repo: context.repo.repo,
-                          title: newTitle,
-                        });
-                      }
+            if (!currentTitle.startsWith("LD-${repoName}")) {
+              const newTitle = `LD-${repoName}-${issueNumber}: ${currentTitle}`;
+              await github.rest.issues.update({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: newTitle,
+              });
+            }
