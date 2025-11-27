@@ -1,0 +1,32 @@
+name: "\U0001F917 Task"
+description: Anything that doesn't fit as a bug or feature, is a task e.g. R&D, documentation, code cleanup, deps, etc.
+labels:
+  - task
+type: Task
+body:
+  - type: textarea
+    id: task-description
+    attributes:
+      label: Describe the task
+      description: |
+        A clear description of what the task is about.
+
+        Specify who, what, where, when, and why as needed as subtitles.
+      value: |
+        Provide a clear and concise description of the task.
+
+        Subtitles (if applicable):
+        ### Who:
+        ### What:
+        ### Where:
+        ### When:
+        ### Why:
+    validations:
+      required: true
+  - type: textarea
+    id: action-steps
+    attributes:
+      label: Action Steps
+      description: Itemise the steps required to complete this task.
+    validations:
+      required: true
