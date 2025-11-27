@@ -1,0 +1,18 @@
+name: Auto add new issue to LD Planning Project
+
+on:
+  issues:
+    types:
+      - opened
+
+jobs:
+  add-to-project:
+    name: Add issue to project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/add-to-project@v1.0.2
+        with:
+          # You can target a project in a different organization
+          # to the issue
+          project-url: ${{ vars.LD_TEAM_PLANNING_PROJECT_URL }}
+          github-token: ${{ secrets.LD_PROJECTS_PAT }}
