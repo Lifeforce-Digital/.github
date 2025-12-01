@@ -5,23 +5,23 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
-    schedule:
-      interval: "daily"
-    open-pull-requests-limit: 20
-    # assignees:
-    #   - "LakshmiT91"
+  # - package-ecosystem: "npm" # See documentation for possible values
+  #   directory: "/" # Location of package manifests
+  #   schedule:
+  #     interval: "daily"
+  #   open-pull-requests-limit: 20
+  # assignees:
+  #   - "LakshmiT91"
   # - package-ecosystem: "maven" # See documentation for possible values
   #   directory: "/" # Location of package manifests
   #   schedule:
   #     interval: "daily"
   #   open-pull-requests-limit: 20
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    open-pull-requests-limit: 20
-    # assignees:
-    #   - "PrimeDominus"
+  # - package-ecosystem: "github-actions"
+  #   directory: "/"
+  #   schedule:
+  #     interval: "daily"
+  #   open-pull-requests-limit: 20
+  # assignees:
+  #   - "PrimeDominus"
 # Instead of `assignees` use CODEOWNERS file to assign PRs to the right people
