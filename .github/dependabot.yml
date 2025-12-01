@@ -9,6 +9,9 @@
 #   directory: "/" # Location of package manifests
 #   schedule:
 #     interval: "daily"
+# commit-message:
+#   # Prefix all commit messages with "chore(deps): "
+#   prefix: "chore(deps)"
 #   open-pull-requests-limit: 20
 # assignees:
 #   - "LakshmiT91"
@@ -16,11 +19,17 @@
 #   directory: "/" # Location of package manifests
 #   schedule:
 #     interval: "daily"
+# commit-message:
+#   # Prefix all commit messages with "chore(deps): "
+#   prefix: "chore(deps)"
 #   open-pull-requests-limit: 20
 # - package-ecosystem: "github-actions"
 #   directory: "/"
 #   schedule:
 #     interval: "daily"
+# commit-message:
+#   # Prefix all commit messages with "chore(deps): "
+#   prefix: "chore(deps)"
 #   open-pull-requests-limit: 20
 # assignees:
 #   - "PrimeDominus"
