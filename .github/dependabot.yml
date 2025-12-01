@@ -24,4 +24,4 @@
 #   open-pull-requests-limit: 20
 # assignees:
 #   - "PrimeDominus"
-# Instead of `assignees` use CODEOWNERS file to assign PRs to the right people
+# Instead of `assignees` use CODEOWNERS file to auto add reviewers to PRs
