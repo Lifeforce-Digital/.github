@@ -2,13 +2,13 @@
 
 <!-- Put an 'x' in the box if true -->
 
-- [ ] The PR title follows the [conventional commits](https://github.com/Lifeforce-Digital/.github/blob/development/.github/CONTRIBUTING.md) format.
+- [ ] The PR title follows the [conventional commits](https://github.com/Lifeforce-Digital/.github/blob/development/.github/CONTRIBUTING.md) format. e.g.
 
 ```
-feat(ui): Add `Button` component
+feat(account): add profile picture upload
 ^    ^    ^
 |    |    |__ Subject
-|    |_______ Scope
+|    |_______ Scope (optional)
 |____________ Type
 ```
 
