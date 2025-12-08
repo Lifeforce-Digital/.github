@@ -13,6 +13,10 @@ feat(account): add profile picture upload button and functionality
 ```
 `Type` can be one of `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `release`, `revert`, `test`
 
+Use **lowercase** for `Type` and `Scope` values.
+
+If it's a BREAKING CHANGE add a `!` after the type/scope e.g. `feat(sms)!: replace twilio with telnyx for SMS`
+
 Below are examples of well-formatted commits:
 
 ```txt
@@ -28,9 +32,10 @@ ci(actions): edit xyz workflow to do abc
 
 <!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
 
-- [ ] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to change)
+- [ ] Bug `fix` (non-breaking change which fixes an issue)
+- [ ] New `feat` (non-breaking change which adds functionality)
+- [ ] Breaking change (`fix(scope)!` or `feat(scope)!` that would cause existing functionality to change)
+- [ ] Does NOT change the functionality of code e.g. `docs`, `build`, `refactor`
 
 ## Checklist:
 
