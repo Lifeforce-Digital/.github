@@ -10,8 +10,9 @@
 #   schedule:
 #     interval: "daily"
 # commit-message:
-#   # Prefix all commit messages with "chore(deps): "
-#   prefix: "chore(deps)"
+#   # Prefix all commit messages with "build(deps): "
+#   prefix: "build(deps)"
+#   prefix-development: "build(deps-dev)
 #   open-pull-requests-limit: 20
 # assignees:
 #   - "LakshmiT91"
@@ -20,17 +21,17 @@
 #   schedule:
 #     interval: "daily"
 # commit-message:
-#   # Prefix all commit messages with "chore(deps): "
-#   prefix: "chore(deps)"
+#   # Prefix all commit messages with "build(deps): "
+#   prefix: "build(deps)"
+#   prefix-development: "build(deps-dev)
 #   open-pull-requests-limit: 20
 # - package-ecosystem: "github-actions"
 #   directory: "/"
 #   schedule:
 #     interval: "daily"
 # commit-message:
-#   # Prefix all commit messages with "chore(deps): "
-#   prefix: "chore(deps)"
-#   open-pull-requests-limit: 20
+#   # Prefix all commit messages with "ci(deps): "
+#   prefix: "ci(deps)"
 # assignees:
 #   - "PrimeDominus"
-# Instead of `assignees` use CODEOWNERS file to auto add reviewers to PRs
+# In addition to `assignees` use CODEOWNERS file to auto add reviewers to PRs
