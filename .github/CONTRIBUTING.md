@@ -20,10 +20,12 @@ The following commit prefixes are supported:
 Below are examples of well-formatted commits:
 
 ```txt
+build(deps): update xyz dependency/library
 feat(call-log): add call duration to log
 fix(auth): handle password validation error
 docs: fix link to website page
 test(user): add test for update phone number
+ci(actions): edit xyz workflow to do abc
 ```
 
 ## Creating Pull Requests
