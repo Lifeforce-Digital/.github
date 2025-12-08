@@ -60,6 +60,6 @@ jobs:
                   # validation is skipped. If you want to rerun the validation when
                   # labels change, you might want to use the `labeled` and `unlabeled`
                   # event triggers in your workflow.
+                  # e.g. Dependabot automatically lables its PRs with `dependencies`
                   ignoreLabels: |
-                      bot
-                      ignore-semantic-pull-request
+                      dependencies
