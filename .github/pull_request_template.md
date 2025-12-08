@@ -5,11 +5,23 @@
 - [ ] The PR title follows the [conventional commits](https://github.com/Lifeforce-Digital/.github/blob/development/.github/CONTRIBUTING.md) format. e.g.
 
 ```
-feat(account): add profile picture upload
-^    ^    ^
-|    |    |__ Subject
-|    |_______ Scope (optional)
-|____________ Type
+feat(account): add profile picture upload button and functionality
+^      ^        ^
+|      |        |__ Subject
+|      |_______ Scope (optional) e.g. the feature/domain/section affected
+|__________ Type
+```
+`Type` can be one of `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `release`, `revert`, `test`
+
+Below are examples of well-formatted commits:
+
+```txt
+build(deps): update xyz dependency/library
+feat(call-log): add call duration to log
+fix(auth): handle password validation error
+docs: fix link to website page
+test(user): add test for update phone number
+ci(actions): edit xyz workflow to do abc
 ```
 
 ## Types of changes
