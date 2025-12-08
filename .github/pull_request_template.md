@@ -13,9 +13,11 @@ feat(account): add profile picture upload button and functionality
 ```
 `Type` can be one of `build`, `chore`, `ci`, `docs`, `feat`, `fix`, `perf`, `refactor`, `release`, `revert`, `test`
 
-Use **lowercase** for `Type` and `Scope` values.
-
-If it's a BREAKING CHANGE add a `!` after the type/scope e.g. `feat(sms)!: replace twilio with telnyx for SMS`
+> Use **lowercase** for `Type` and `Scope` values.
+>
+> First char of `Subject` value must be **lowercase)).
+> 
+> If it's a BREAKING CHANGE add a `!` after the type/scope e.g. `feat(sms)!: replace twilio with telnyx for SMS`
 
 Below are examples of well-formatted commits:
 
