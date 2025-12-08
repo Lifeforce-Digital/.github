@@ -12,7 +12,7 @@
 # commit-message:
 #   # Prefix all commit messages with "build(deps): "
 #   prefix: "build(deps)"
-#   prefix-development: "build(deps-dev)
+#   prefix-development: "build(deps-dev)"
 #   open-pull-requests-limit: 20
 # assignees:
 #   - "LakshmiT91"
