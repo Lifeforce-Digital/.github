@@ -44,7 +44,7 @@ jobs:
                   # - UPPERCASE titles because we promote the use of lowercase
                   disallowScopes: |
                       release
-                      [A-Z_-]+
+                      [A-Z_]+
                   # Configure additional validation for the subject based on a regex.
                   # Ensures that the subject doesn't start with an uppercase character.
                   subjectPattern: ^[^A-Z].*$
@@ -52,14 +52,11 @@ jobs:
                   # the default error message that is shown when the pattern doesn't match.
                   # The variables `subject` and `title` can be used within the message.
                   subjectPatternError: |
-                      The subject "{subject}" found in the pull request title "{title}"
-                      didn't match the configured pattern.
-                      Please ensure that the subject doesn't start with an uppercase character.
-                      The scope should not be in UPPERCASE.
+                      The subject "{subject}" found in the pull request title "{title}" didn't match the configured pattern. The subject must NOT start with an UPPERCASE character. The scope should NOT be in UPPERCASE, nor contain any underscores. 
                   # If the PR contains one of these newline-delimited labels, the
                   # validation is skipped. If you want to rerun the validation when
                   # labels change, you might want to use the `labeled` and `unlabeled`
                   # event triggers in your workflow.
+                  # e.g. Dependabot automatically lables its PRs with `dependencies`
                   ignoreLabels: |
-                      bot
-                      ignore-semantic-pull-request
+                      dependencies
