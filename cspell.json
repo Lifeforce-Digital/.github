@@ -5,5 +5,21 @@
   "dictionaries": [],
   "words": ["commitzen", "LEFTHOOK", "pnpx"],
   "ignoreWords": [],
-  "import": []
+  "import": [
+    "pino",
+    "Buildx",
+		"cacheonly",
+		"commitlint",
+		"Coolify",
+		"GROUPNAME",
+		"healthchecks",
+		"LIFEFORCE",
+		"Listmonk",
+		"mikro",
+		"nestjs",
+		"Novu",
+		"novuhq",
+		"SENDGRID",
+		"TELNYX",
+		"tseslint"]
 }
