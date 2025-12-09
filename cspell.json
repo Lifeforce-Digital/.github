@@ -1,13 +1,18 @@
 {
-  "version": "0.2",
-  "ignorePaths": [],
-  "dictionaryDefinitions": [],
-  "dictionaries": [],
-  "words": ["commitzen", "LEFTHOOK", "pnpx"],
-  "ignoreWords": [],
-  "import": [
-    "pino",
-    "Buildx",
+	
+	"version": "0.2",
+	"language": "en, en-GB",
+	"ignorePaths": [".vscode/**", "node_modules/**", "dist/**", "build/**", ".next/**", "coverage/**", ".turbo/**", ".git/**"],
+	"useGitignore": true,
+	"ignoreRandomStrings": true,
+	"dictionaryDefinitions": [],
+	"dictionaries": [],
+	"words": [
+		"commitzen", 
+		"LEFTHOOK", 
+		"pnpx", 
+		"pino",
+		"Buildx",
 		"cacheonly",
 		"commitlint",
 		"Coolify",
@@ -21,5 +26,8 @@
 		"novuhq",
 		"SENDGRID",
 		"TELNYX",
-		"tseslint"]
+		"tseslint"
+	],
+	"ignoreWords": [],
+	"import": []
 }
