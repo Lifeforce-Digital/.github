@@ -1,7 +1,7 @@
 # Build commit messages
 prepare-commit-msg:
   commands:
-    commitzen:
+    commitizen:
       interactive: true
       run: pnpx cz --hook # Or npx cz --hook
       env:
