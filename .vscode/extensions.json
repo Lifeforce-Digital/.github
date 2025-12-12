@@ -1,12 +1,18 @@
 {
-	"recommendations": [
-		"streetsidesoftware.code-spell-checker",
-		"ms-azuretools.vscode-containers",
-		"streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries",
-		"github.vscode-pull-request-github",
-		"davidanson.vscode-markdownlint",
-		"marclipovsky.string-manipulation",
-		"vivaxy.vscode-conventional-commits",
-		"steoates.autoimport"
-	]
+  "recommendations": [
+    "streetsidesoftware.code-spell-checker",
+    "ms-azuretools.vscode-containers",
+    "streetsidesoftware.code-spell-checker-cspell-bundled-dictionaries",
+    "github.vscode-pull-request-github",
+    "davidanson.vscode-markdownlint",
+    "marclipovsky.string-manipulation",
+    "vivaxy.vscode-conventional-commits",
+    "steoates.autoimport",
+    "biomejs.biome",
+    "esbenp.prettier-vscode",
+    "sonarsource.sonarlint-vscode",
+    "mechatroner.rainbow-csv",
+    "pflannery.vscode-versionlens",
+    "redhat.vscode-yaml"
+  ]
 }
