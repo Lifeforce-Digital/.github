@@ -1,0 +1,22 @@
+# Prettier is still used for some file types not yet supported by Biome
+node_modules
+/.cache
+.eslintignore
+.gitignore
+.git
+LICENSE
+build
+dist
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+
+# Biome handles the following
+*.json
+*.jsonc
+*.js
+*.jsx
+*.ts
+*.tsx
+*.html
+*.css
