@@ -10,6 +10,8 @@ dist
 pnpm-lock.yaml
 package-lock.json
 yarn.lock
+.prettierignore
+.czrc
 
 # Biome handles the following
 *.json
