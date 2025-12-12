@@ -11,13 +11,11 @@ prepare-commit-msg:
       only:
         - run: powershell -Command "if ( ('$IsWindows' -eq 'True') -and (Test-Path '.git/COMMIT_EDITMSG') ) { exit 0 } else { exit 1 }"
       interactive: true
-      # run: pnpm commit --hook
-      run: npx cz --hook
+      run: pnpm cz --hook
       env:
         LEFTHOOK: "0"
     - name: commitizen-nix
       only:
-        # - run: sh -c 'if [ "$(uname)" = "Linux" ] || [ "$(uname)" = "Darwin" ]; then exit 0; else exit 1; fi'
         - run: uname
       interactive: true
       run: |
@@ -25,11 +23,19 @@ prepare-commit-msg:
         if [ -n "$COMMIT_MSG" ]; then
           exit 0
         fi
-        # pnpm commit --hook
-        # npx cz --hook
         pnpm cz --hook
       env:
         LEFTHOOK: "0"
+
+# Validate commit messages
+commit-msg:
+  jobs:
+    - name: commitlint
+      run: pnpm commitlint --verbose --edit {1}
+
+# Auto add fixed files to commit
+pre-commit:
+  jobs:
     - name: biome
       # run: pnpx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
       run: pnpm biome:write --colors=off {staged_files}
@@ -37,9 +43,3 @@ prepare-commit-msg:
     - name: prettier # Used for file types not supported by Biome
       run: pnpm prettier --write {staged_files}
       stage_fixed: true
-
-# Validate commit messages
-commit-msg:
-  jobs:
-    - name: commitlint
-      run: pnpm commitlint --verbose --edit {1}
