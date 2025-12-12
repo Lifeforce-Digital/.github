@@ -17,7 +17,9 @@
 	"files": {
 		"includes": [
 			"**",
-			"!!**/dist"
+			"!!**/dist",
+			"!!**/.czrc",
+			"!!**/.prettierignore"
 			// "!!**/package.json",
 			// "!!**/pnpm-lock.yaml",
 			// "!!**/pnpm-workspace.yaml",
