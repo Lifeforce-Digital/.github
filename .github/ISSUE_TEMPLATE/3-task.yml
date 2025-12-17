@@ -9,18 +9,17 @@ body:
     attributes:
       label: Describe the task
       description: |
-        A clear description of what the task is about.
-
-        Specify who, what, where, when, and why as needed as subtitles.
+        Specify why, what, who, where, when as needed to provide the overall task details.
       value: |
-        Provide a clear and concise description of the task.
-
-        Subtitles (if applicable):
-        ### Who:
-        ### What:
-        ### Where:
-        ### When:
         ### Why:
+
+        ### What:
+
+        ### Who:
+
+        ### Where:
+
+        ### When:
     validations:
       required: true
   - type: textarea
@@ -28,5 +27,9 @@ body:
     attributes:
       label: Action Steps
       description: Itemise the steps required to complete this task.
+      value: |
+        - [ ] e.g. Create docker compose for xyz
+        - [ ] e.g. Set up VPS
+        - [ ] e.g. Implement security so that only specified clients can make API calls
     validations:
       required: true
