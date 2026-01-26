@@ -24,7 +24,7 @@ body:
     id: additional-info
     attributes:
       label: (Optional) Additional Information (e.g. such as logs, user type, etc.)
-      description: Any other relevant details that could help with reproduction..
+      description: Any other relevant details that could help with reproduction.
     validations:
       required: false
   - type: textarea
@@ -34,3 +34,10 @@ body:
       description: A clear and concise description of what you expected to happen.
     validations:
       required: true
+  - type: textarea
+    id: suggested-solution
+    attributes:
+      label: (Optional) Suggested Solution/Approach to Fix this Bug
+      description: A detailed description of how to fix this bug and/or the approach to use to fix it.
+    validations:
+      required: false
