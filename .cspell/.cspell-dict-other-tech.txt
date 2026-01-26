@@ -1,0 +1,15 @@
+# Other Tech Custom Dictionary Words
+buildx
+Buildx
+cacheonly
+Coolify
+COOLIFY
+onlatest
+DIRECTUS
+dokploy
+esbuild
+healthcheck
+pnpx
+tldjs
+Vercel
+VITE

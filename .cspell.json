@@ -1,0 +1,25 @@
+{
+  "version": "0.2","language": "en, en-GB, en-AU",
+  "ignorePaths": [
+    ".vscode/**",
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    ".next/**",
+    "coverage/**",
+    ".turbo/**",
+    ".git/**"
+  ],
+  "useGitignore": true,
+  "ignoreRandomStrings": true,
+  "dictionaryDefinitions": [
+    { "name": "other-tech", "path": "./.cspell/.cspell-dict-other-tech.txt", "addWords": true },
+    { "name": "github", "path": "./.cspell/.cspell-dict-github.txt", "addWords": true },
+    { "name": "git-universal", "path": "./.cspell/.cspell-dict-git-universal.txt", "addWords": true },
+    { "name": "custom-workspace", "description": "Custom workspace dictionary used by cSpell VS Code extension.", "path": "./.cspell/custom-dictionary-workspace.txt", "addWords": true, "scope": "workspace" }
+  ],
+  "dictionaries": ["other-tech", "github", "git-universal", "custom-workspace"],
+  "words": [],
+  "ignoreWords": [],
+  "import": []
+}
