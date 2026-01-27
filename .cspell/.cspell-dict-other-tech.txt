@@ -13,3 +13,9 @@ pnpx
 tldjs
 Vercel
 VITE
+tolgee
+userback
+contentful
+domhandler
+graphemer
+livekit
