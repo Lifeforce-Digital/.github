@@ -19,3 +19,4 @@ contentful
 domhandler
 graphemer
 livekit
+krisp
