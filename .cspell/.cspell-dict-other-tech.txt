@@ -44,3 +44,4 @@ TELNYX
 tseslint
 unrs
 Twilio
+sonarqube
