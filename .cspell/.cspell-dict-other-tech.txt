@@ -45,3 +45,4 @@ tseslint
 unrs
 Twilio
 sonarqube
+opusplan
