@@ -38,8 +38,12 @@ pre-commit:
   jobs:
     - name: biome
       # run: pnpx @biomejs/biome check --write --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {staged_files}
-      run: pnpm biome:write --colors=off {staged_files}
+      run: |
+        echo $PATH
+        pnpm biome:write --colors=off {staged_files}
       stage_fixed: true
     - name: prettier # Used for file types not supported by Biome
-      run: pnpm prettier --write {staged_files}
+      run: |
+        echo $PATH
+        pnpm prettier --write {staged_files}
       stage_fixed: true
