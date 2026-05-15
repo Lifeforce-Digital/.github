@@ -46,3 +46,13 @@ unrs
 Twilio
 sonarqube
 opusplan
+valkey
+PGPASSWORD
+logql
+tracecontext
+appendonly
+loglevel
+maxmemory
+allkeys
+Prometheusremotewrite
+sinch
