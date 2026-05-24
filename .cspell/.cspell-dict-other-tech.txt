@@ -56,3 +56,4 @@ maxmemory
 allkeys
 Prometheusremotewrite
 sinch
+Kysely
