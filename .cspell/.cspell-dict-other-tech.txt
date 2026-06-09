@@ -57,3 +57,4 @@ allkeys
 Prometheusremotewrite
 sinch
 Kysely
+Vitest
