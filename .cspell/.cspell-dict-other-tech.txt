@@ -59,3 +59,4 @@ sinch
 Kysely
 Vitest
 DBOS
+zizmor
