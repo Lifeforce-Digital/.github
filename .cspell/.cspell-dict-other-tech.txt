@@ -58,3 +58,4 @@ Prometheusremotewrite
 sinch
 Kysely
 Vitest
+DBOS
