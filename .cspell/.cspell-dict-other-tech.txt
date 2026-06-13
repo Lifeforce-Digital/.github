@@ -61,3 +61,7 @@ Vitest
 DBOS
 zizmor
 Oathkeeper
+dorny
+psql
+pkill
+psql
